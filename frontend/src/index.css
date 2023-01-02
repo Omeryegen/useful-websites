@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    background-color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #222831;
+}
+
+
+h2{
+    margin: .5rem 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h3 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+select {
+    padding: .5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 150px;
+}
+
+
+/*Navbar*/
+nav {
+    width: 100vw;
+    background-color: #222831;
+   
+}
+
+.navbar-content{
+    width: 90%;
+    margin: auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.input-group.sticky{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #282A3A;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+.input-group {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+/*Card*/
+.card {
+    display: grid;
+    width: 250px;
+    min-height: 300px;
+    grid-template-rows: repeat(4,1fr);
+    padding: 1rem;
+    background-color: #fff;
+    margin: .5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 3px;
+}
+
+.image {
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
+.info {
+    grid-row: span 3;
+    justify-self: center;
+    align-self: center;
+}
+
+
+/*Showcase*/
+.showcase{
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.showcase-content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.currentCat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.currentCat button {
+    padding: .5rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.currentCat button:hover {
+    transform: scale(1.2);
+}
+
+
+/*Footer*/
+
+footer {
+    width: 100vw;
+    margin: auto 0;
+    background-color: #282A3A;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.link {
+    font-weight: bold;
+    border-radius: 5px;
+    padding: .5rem;
+    color: #333;
+}
+
+.link:hover{
+    color:coral;
+}
